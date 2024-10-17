@@ -86,11 +86,9 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
 <body class="hold-transition sidebar-mini layout-fixed">
     <div class="wrapper">
-        <!-- Navbar -->
-        <?php include '../../Navbar_Admin.php'; ?>
+        <?php include '../Navbar_Admin.php'; ?>
 
-        <!-- Include Menubar.php -->
-        <?php include '../../Menubar.php'; ?>
+        <?php include '../Menubar.php'; ?>
 
         <!-- Content Wrapper -->
         <div class="content-wrapper">
@@ -117,7 +115,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                                         </div>
                                         <div class="form-group">
                                             <label for="image">รูปภาพ</label><br>
-                                            <img src="<?php echo htmlspecialchars($category['image']); ?>" alt="Current Image" style="max-width: 200px; display: block; margin-bottom: 10px;">
+                                            <img src="../../assets/imge/category/<?php echo htmlspecialchars($category['image']); ?>" alt="Current Image" style="max-width: 200px; display: block; margin-bottom: 10px;">
                                             <input type="file" class="form-control" id="image" name="image">
                                             <small>กรุณาเลือกไฟล์รูปภาพใหม่ หากต้องการเปลี่ยน</small>
                                         </div>

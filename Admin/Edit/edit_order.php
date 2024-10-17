@@ -66,11 +66,9 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
 <body class="hold-transition sidebar-mini layout-fixed">
     <div class="wrapper">
-        <!-- Navbar -->
-        <?php include '../../Navbar_Admin.php'; ?>
+        <?php include '../Navbar_Admin.php'; ?>
 
-        <!-- Include Menubar.php -->
-        <?php include '../../Menubar.php'; ?>
+        <?php include '../Menubar.php'; ?>
 
         <!-- Content Wrapper -->
         <div class="content-wrapper">

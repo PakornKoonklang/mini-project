@@ -11,7 +11,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $category_id = $_POST['category_id'];
     
     // ตรวจสอบและจัดการไฟล์รูปภาพ
-    $target_dir = "../uploads"; // โฟลเดอร์สำหรับเก็บรูปภาพ
+    $target_dir = "../../assets/imge/product/"; // โฟลเดอร์สำหรับเก็บรูปภาพ
     $target_file = $target_dir . basename($_FILES["image"]["name"]);
     $uploadOk = 1;
     $imageFileType = strtolower(pathinfo($target_file, PATHINFO_EXTENSION));
@@ -55,10 +55,9 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                 $stmt->bindParam(':category_id', $category_id);
                 $stmt->bindParam(':image', $target_file);
 
-                // รันคำสั่ง SQL
                 if ($stmt->execute()) {
                     echo "เพิ่มสินค้าสำเร็จ!";
-                    header("Location: ../Manage/manage_products.php"); // เปลี่ยนเส้นทางกลับไปยังหน้า Manage
+                    header("Location: ../Manage/manage_products.php");
                     exit();
                 } else {
                     echo "เกิดข้อผิดพลาดในการเพิ่มสินค้า.";

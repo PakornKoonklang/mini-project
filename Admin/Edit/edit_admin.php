@@ -64,6 +64,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
 <!DOCTYPE html>
 <html lang="th">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -71,13 +72,12 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/admin-lte@3.1/dist/css/adminlte.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
+
 <body class="hold-transition sidebar-mini layout-fixed">
     <div class="wrapper">
-        <!-- Navbar -->
-        <?php include '../../Navbar_Admin.php'; ?>
+        <?php include '../Navbar_Admin.php'; ?>
 
-        <!-- Include Menubar.php -->
-        <?php include '../../Menubar.php'; ?>
+        <?php include '../Menubar.php'; ?>
 
         <!-- Content Wrapper -->
         <div class="content-wrapper">
@@ -123,4 +123,5 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
     </div>
 </body>
+
 </html>

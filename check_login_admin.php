@@ -23,7 +23,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         
             echo "<script>
                     alert('เข้าสู่ระบบสำเร็จ!');
-                    window.location.href='admin_dashboard.php';
+                    window.location.href='admin/admin_dashboard.php';
                   </script>";
         } else {
             echo "<script>
@@ -31,7 +31,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                     window.location.href='loginadmin.php';
                   </script>";
         }
-        
     } 
 }
 ?>

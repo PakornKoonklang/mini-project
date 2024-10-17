@@ -9,7 +9,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     if (isset($_FILES['image']) && $_FILES['image']['error'] == 0) {
         $image = $_FILES['image'];
         $image_name = uniqid() . '_' . basename($image['name']); // สร้างชื่อไฟล์ที่ไม่ซ้ำ
-        $target_directory = '../uploads'; // เปลี่ยนเส้นทางให้ถูกต้อง
+        $target_directory = '../../assets/imge/category/'; // เปลี่ยนเส้นทางให้ถูกต้อง
         $target_file = $target_directory . $image_name;
 
         // ตรวจสอบประเภทไฟล์

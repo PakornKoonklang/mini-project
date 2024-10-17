@@ -34,7 +34,7 @@ if (isset($_POST['update'])) {
     $payment_status = $_POST['payment_status'];
     $payment_method = $_POST['payment_method'];
     $transaction_id = $_POST['transaction_id'];
-    
+
     // จัดการอัปโหลดรูปใบเสร็จใหม่ (ถ้ามี)
     $receipt_image = $payment['receipt_image'];
     if (isset($_FILES['receipt_image']) && $_FILES['receipt_image']['error'] == 0) {
@@ -86,12 +86,9 @@ if (isset($_POST['update'])) {
 
 <body class="hold-transition sidebar-mini layout-fixed">
     <div class="wrapper">
-        <!-- Navbar -->
-        <?php include '../../Navbar_Admin.php'; ?>
+        <?php include '../Navbar_Admin.php'; ?>
 
-        <!-- Include Menubar.php -->
-        <?php include '../../Menubar.php'; ?>
-
+        <?php include '../Menubar.php'; ?>
         <!-- Content Wrapper -->
         <div class="content-wrapper">
             <div class="content-header">
