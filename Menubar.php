@@ -78,9 +78,15 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a id="help-link" href="../Manage/manage_customers.php" class="nav-link">
+                    <a id="help-link" href="../Manage/manage_payments.php" class="nav-link">
                         <i class="nav-icon fas fa-question-circle"></i>
-                        Customers
+                        Payments
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a id="help-link" href="../Manage/manage_shipping.php" class="nav-link">
+                        <i class="nav-icon fas fa-question-circle"></i>
+                        Shipping
                     </a>
                 </li>
             </ul>

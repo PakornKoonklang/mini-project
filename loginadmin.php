@@ -13,7 +13,7 @@
     <?php include('navbar.php'); ?>
 
     <div class="container">
-        <h2 class="mb-4">เข้าสู่ระบบ</h2>
+        <h2 class="mb-4">เข้าสู่ระบบAdmin</h2>
         <form action="check_login_admin.php" 
         method="post">
             <div class="mb-3">

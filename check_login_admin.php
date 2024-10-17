@@ -20,22 +20,18 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $_SESSION['email'] = $user['email'];
             $_SESSION['first_name'] = $user['first_name'];
             $_SESSION['last_name'] = $user['last_name'];
-
+        
             echo "<script>
-                    alert('Login successful!');
+                    alert('เข้าสู่ระบบสำเร็จ!');
                     window.location.href='admin_dashboard.php';
                   </script>";
         } else {
             echo "<script>
-                    alert('Incorrect email or password.');
-                    window.location.href='admin_dashboard.php';
+                    alert('อีเมลหรือรหัสผ่านไม่ถูกต้อง.');
+                    window.location.href='loginadmin.php';
                   </script>";
         }
-    } else {
-        echo "<script>
-                alert('Email not found.');
-                window.location.href='login.php';
-              </script>";
-    }
+        
+    } 
 }
 ?>
